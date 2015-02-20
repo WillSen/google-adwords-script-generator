@@ -1,0 +1,10 @@
+body {
+  padding: 30px;
+}
+
+.javascript {
+  font-size: 16px;
+}
+#keywords-date, #stats-date {
+  height: 30px !important; 
+}
