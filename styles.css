@@ -8,3 +8,7 @@ body {
 #keywords-date, #stats-date {
   height: 30px !important; 
 }
+
+.logo{
+  height: 40px;
+}
