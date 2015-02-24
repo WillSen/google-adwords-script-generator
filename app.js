@@ -15,7 +15,7 @@ var keywords_date = 'LAST_30_DAYS',
     stats_date = 'LAST_30_DAYS',
     condition = 'Impressions',
     numberOfClicksToPause = '1000',
-    percentReduce = '0.75',
+    percentReduce = '0.25',
     goal = '10'
 
 
@@ -24,16 +24,28 @@ $(document).ready(function(){
   $('#keywords-date').on('change', function() {
     var that = $(this).val();
     keywords_date = dataMap[that]
-    console.log(keywords_date)
     updateScript()
-    // alert( this.value ); // or $(this).val()
   });
   $('#stats-date').on('change', function() {
     var that = $(this).val();
     stats_date = dataMap[that]
-    console.log(stats_date)
     updateScript()
-    // alert( this.value ); // or $(this).val()
+  });
+  $('#condition').on('change', function() {
+    condition = $(this).val();
+    updateScript()
+  });
+  $('#numberOfClicksToPause').keyup(function() {
+    numberOfClicksToPause = $(this).val();
+    updateScript()
+  });
+  $('#percentReduce').keyup(function() {
+    percentReduce = $(this).val()/100;
+    updateScript()
+  });
+  $('#goal').keyup(function() {
+    goal = $(this).val();
+    updateScript()
   });
 
   function updateScript(){

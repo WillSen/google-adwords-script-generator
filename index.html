@@ -28,18 +28,37 @@
           </div>
 
           <div class="pure-control-group">
-              <label for="date">Stat for keyword from what time period?</label>
-              <select id="stats-date">
-                  <option>Yesterday</option>
-                  <option>Last 7 Days</option>
-                  <option>Last Week</option>
-                  <option>Last 2 weeks</option>
-                  <option selected="selected">Last 30 days</option>
-                  <option>Last Business week</option>
-                  <option>This Month</option>
-                  <option>Last Month</option>
-                  <option>All time</option>
-              </select>
+            <label for="date">Stat for keyword from what time period?</label>
+            <select id="stats-date">
+              <option>Yesterday</option>
+              <option>Last 7 Days</option>
+              <option>Last Week</option>
+              <option>Last 2 weeks</option>
+              <option selected="selected">Last 30 days</option>
+              <option>Last Business week</option>
+              <option>This Month</option>
+              <option>Last Month</option>
+              <option>All time</option>
+            </select>
+          </div>
+          <div class="pure-control-group">
+            <label for="condition">Select keywords with Impressions/Clicks greater than 0</label>
+            <select id="condition">
+              <option>Impressions</option>
+              <option>Clicks</option>
+            </select>
+          </div>
+          <div class="pure-control-group">
+            <label for="clicksToPause">How many clicks with no conversions before we pause the keyword?</label>
+            <input id="numberOfClicksToPause" type="text" placeholder="1000">
+          </div>
+          <div class="pure-control-group">
+            <label for="condition">Percentage to reduce MaxCPC by if no converted clicks</label>
+            <input id="percentReduce" type="text" placeholder="25">
+          </div>
+          <div class="pure-control-group">
+            <label for="Goal">Goal</label>
+            <input id="goal" type="text" placeholder="10">
           </div>
       </fieldset>
   </form>
